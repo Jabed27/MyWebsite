@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>ZIJ</title>
+        <link href="/static/css/register.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/js/registerform.js" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: teal;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    ::placeholder {
+  color: teal;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: teal;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: teal;
+}
+    </style>
+    </head>
+ <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+     <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo"><img style="background-image: none; border-radius: 50%;background-color: black;" src="/static/images/index/Logo.jpeg" alt=""></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Works</a></li>
+            <li><a href="/static/about.html">About</a></li>
+            <li><a href="/static/contact.html">Chat</a></li>
+            <li><a href="/static/login.html">Login</a></li>
+          </ul>
+    
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Works</a></li>
+            <li><a href="/static/about.html">About</a></li>
+            <li><a href="/static/contact.html">chat</a></li>
+            <li><a href="/static/login.html">Login</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    <div class="form">
+      
+        <ul class="tab-group">
+          <li class="tab " ><a href="register.html">Sign Up</a></li>
+          <li class="tab active" ><a href="#">Log In</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          
+          
+          <div id="login">   
+            <h1>Welcome Back!</h1>
+            
+            <form action="/" method="post">
+            
+              <div class="field-wrap">
+             
+              <input type="email" placeholder="email*" required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              
+              <input type="password"placeholder="password*"required autocomplete="off"/>
+            </div>
+            
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            
+            <button class="button button-block"/>Log In</button>
+            
+            </form>
+  
+          </div>
+          <script>
+            function openCity(cityName) {
+              var i;
+              var x = document.getElementsByClassName("city");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              document.getElementById(cityName).style.display = "block";  
+            }
+            </script>
+          
+        </div><!-- tab-content -->
+        
+  </div> <!-- /form -->
+ </body>
+</html>

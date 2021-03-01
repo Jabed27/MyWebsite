@@ -6,9 +6,10 @@
   <title>ZIJ</title>
 
   <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/contact.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/contact.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <style>
     body {
@@ -47,21 +48,52 @@
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }   
+.item1 { grid-area: header; }
+
+
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
-  background-color: teal;
-  padding: 30px;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  
+  padding: 10px;
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 30px;
-  font-size: 30px;
-  text-align: center;
-}
-    
 
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.column {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+::placeholder {
+  color: teal;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: teal;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: teal;
+}
     </style>
 </head>
 <body>
@@ -91,25 +123,105 @@ function topFunction() {
 </script>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img style="background-image: none; border-radius: 50%;background-color: black;" src="images/index/Logo.jpeg" alt=""></a>
+      <a id="logo-container" href="index.html" class="brand-logo"><img style="background-image: none; border-radius: 50%;background-color: black;" src="/static/images/index/Logo.jpeg" alt=""></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Works</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Chat</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="/static/index.html">Home</a></li>
+        <li><a href="/static/work.html">Works</a></li>
+        <li><a href="/static/about.html">About</a></li>
+        <li><a href="/static/register.html">Login</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Works</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">chat</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="/static/index.html">Home</a></li>
+        <li><a href="/static/work.html">Works</a></li>
+        <li><a href="/static/about.html">About</a></li>
+       
+        <li><a href="/static/login.html">Login</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
- 
+  <div class="grid-container">
+    <div class="item1 center">
+     
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+           <h4>Address</h4> 
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">home</i></h2>
+              <p style="font-size: 25px;">H #5, L #7, Block #A, Halishahar, H/E Chittagong</p>
+            </div>
+            
+             
+              
+          </div>
+          <div class="col-sm-4">
+            <h4>Phone</h4> 
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">phone</i></h2>
+              
+              <p style="font-size: 25px;">01627295521</p>
+            </div>
+             
+              
+          </div>
+          <div class="col-sm-4">
+            <h4>Email</h4> 
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">email</i></h2>
+              <p style="font-size: 25px;">zobaidulislamjabed@gmail.com</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row center">
+          <div class="container">
+            <div class="row center">
+                <h1>contact us</h1>
+            </div>
+            <div class="row center">
+                <h4 style="text-align:center">We'd love to hear from you!</h4>
+            </div>
+            <div class="row input-container">
+                <div class="col-xs-12">
+                  <div class="styled-input wide">
+                    <input type="text" placeholder="Your name*"required />
+                    
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="styled-input">
+                    <input type="text" placeholder="Your email*"required />
+                   
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="styled-input" style="float:right;">
+                    <input type="text" placeholder="Phone*"required />
+                    
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="styled-input wide">
+                    <textarea placeholder="Just give a shout....*" required></textarea>
+                    
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="btn-lrg submit-btn">Send Message</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    
+  </div>
  
   <footer class="page-footer black">
     <div class="container">
@@ -128,7 +240,9 @@ function topFunction() {
             <a href="https://github.com/Jabed27"><img src="https://img.icons8.com/doodle/48/000000/github.png"/></a>
             <a href="zobaidulislamjabed97"><img src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a> 
             <a href="https://www.linkedin.com/in/md-zobaidul-islam-jabed-2308181aa"><img src="https://img.icons8.com/doodle/48/000000/linkedin.png"/></a>
-           </div>
+            <a href="https://www.youtube.com/channel/UCXv2B1P83JLNulAXz5J_Owg"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png"/></a>
+
+          </div>
 
            
            
@@ -162,8 +276,8 @@ function topFunction() {
   
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="/static/js/materialize.js"></script>
+  <script src="/static/js/init.js"></script>
 
   </body>
 </html>

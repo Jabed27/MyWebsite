@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ZIJ</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/work.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: teal;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    </style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img style="background-image: none; border-radius: 50%;background-color: black;" src="/static/images/index/Logo.jpeg" alt=""></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/static/work.html">Works</a></li>
+        <li><a href="/static/about.html">About</a></li>
+        <li><a href="/static/contact.html">Chat</a></li>
+        <li><a href="/static/login.html">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/static/work.html">Works</a></li>
+        <li><a href="/static/about.html">About</a></li>
+        <li><a href="/static/contact.html">chat</a></li>
+        <li><a href="/static/login.html">Login</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h5 class="header center white-text text-lighten-2">Hello!</h5>
+        <h1 class="header center teal-text text-lighten-2">These are some of my projects..</h1>
+        
+       
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="/static/images/index/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <section id="projects">
+    <div id="projects-intro"><h3>Works...</h3></div>
+    <div id="showcase">
+      <a class="project-tile" href="https://www.youtube.com/watch?v=dJgyZrMV6lU&list=PLfNhbgXW56qz2-R_SPmALeCyfm8MSrH5L&index=2">
+        <img class="project-pic" src="/static/images/work/disclose.png" alt="project">
+        <div class="project-title">Disclose</div>
+      </a>
+      <a class="project-tile" href="https://www.youtube.com/watch?v=HdBzz9cRSA0&list=PLfNhbgXW56qz2-R_SPmALeCyfm8MSrH5L&index=1">
+        <img class="project-pic" src="/static/images/work/algo.png" alt="project">
+        <div class="project-title">Algorithm Simulator</div>
+      </a>
+      <a class="project-tile" href="https://www.youtube.com/watch?v=kULUzHGnOqI">
+        <img class="project-pic" src="/static/images/work/metarilize.png" alt="project">
+        <div class="project-title">Materialized view Implementation</div>
+      </a>
+      <a class="project-tile" href="https://github.com/Jabed27/HealthCare/tree/master">
+        <img class="project-pic" src="https://codepen.io/iceron/pen/GGvEZo/image/small.png" alt="project">
+        <div class="project-title">Health Care</div>
+      </a>
+  </div>
+  </section>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A Full Stack Developer</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/static/images/index/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+      <div class="col l4 s12">
+          <h5 class="white-text">Links</h5>
+          
+        </div>
+        <div class="col l6 s8">
+          <h5 class="white-text">Let's follow</h5>
+          
+          
+           <div class="row">
+            <a href="https://www.facebook.com/jabed27"><img src="https://img.icons8.com/doodle/50/000000/facebook-new.png"/></a> 
+            <a href="https://www.youtube.com/channel/UCXv2B1P83JLNulAXz5J_Owg"><img src="https://img.icons8.com/doodle/48/000000/youtube--v1.png"/></a>
+           <a href="https://github.com/Jabed27"><img src="https://img.icons8.com/doodle/48/000000/github.png"/></a>
+           <a href="zobaidulislamjabed97"><img src="https://img.icons8.com/doodle/48/000000/instagram-new.png"/></a> 
+           <a href="https://www.linkedin.com/in/md-zobaidul-islam-jabed-2308181aa"><img src="https://img.icons8.com/doodle/48/000000/linkedin.png"/></a>
+           <a href="https://www.youtube.com/channel/UCXv2B1P83JLNulAXz5J_Owg"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png"/></a>
+        </div>
+
+           
+           
+          
+        </div>
+        <div class="col l2 s12">
+          <h5 class="white-text">Connect</h5>
+          
+            <div class="row">
+            
+              <a class="white-text" href="#!">  zobaidulislamjabed@gmail.com</a>
+            </div>
+           <div class="row">
+            <a class="white-text" href="#!"> </i> 01627295521</a>
+           </div>
+          
+         
+            
+            
+            
+         
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="#">ZIJ</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/static/js/materialize.js"></script>
+  <script src="/static/js/init.js"></script>
+
+  </body>
+</html>

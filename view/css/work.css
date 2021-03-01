@@ -1,0 +1,98 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
+ 
+ p {
+   line-height: 2rem;
+ }
+ 
+ .sidenav-trigger {
+   color: #26a69a;
+ }
+ 
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+
+ #projects {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #projects-intro {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    grid-gap: 20px 20px;  
+  }
+  
+  .project-tile {
+    display: flex;
+    flex-direction: column;  
+    box-shadow: 0 0 15px 0 LightBlue;  
+  }
+  
+  .project-pic {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .project-title {
+    padding: 25px;    
+    font-weight: bold;
+    font-family: Verdana, sans serif;
+    font-size: 15px;
+  }
+   
