@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>ZIJ</title>
         <link href="css/register.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+        <script  src="/static/Auth/Auth.js" defer></script>
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="js/registerform.js" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -109,26 +113,26 @@
             <div class="top-row">
               <div class="field-wrap">
                
-                <input type="text" placeholder="First name*" required autocomplete="off" />
+                <input type="text" placeholder="First name*" id = "f_name"required autocomplete="off" />
               </div>
           
               <div class="field-wrap">
                
-                <input type="text" placeholder="Last name*"required autocomplete="off"/>
+                <input type="text" placeholder="Last name*" id = "l_name"required autocomplete="off"/>
               </div>
             </div>
   
             <div class="field-wrap">
               
-              <input type="email" placeholder="email*"required autocomplete="off"/>
+              <input type="email" placeholder="email*" id = "emailAddress"required autocomplete="off"/>
             </div>
             
             <div class="field-wrap">
               
-              <input type="password"placeholder="password*"required autocomplete="off"/>
+              <input type="password"placeholder="password*" id = "password"required autocomplete="off"/>
             </div>
             
-            <button type="submit" class="button button-block"/>Get Rgistered</button>
+            <button id="register" type="submit" class="button button-block">Get Rgistered</button>
             
             </form>
   

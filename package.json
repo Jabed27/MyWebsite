@@ -21,9 +21,14 @@
   },
   "homepage": "https://github.com/Jabed27/MyWebsite#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "firebase": "^8.2.9",
     "morgan": "^1.10.0",
+    "nodemailer": "^6.5.0",
+    "nodemailer-mailgun-transport": "^2.0.2",
     "npm-path": "^2.0.4",
     "path": "^0.12.7"
   },

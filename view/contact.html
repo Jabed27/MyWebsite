@@ -11,6 +11,7 @@
   <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/static/css/contact.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src = "httprequest/contact.js" defer></script>
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -187,30 +188,30 @@ function topFunction() {
             <div class="row input-container">
                 <div class="col-xs-12">
                   <div class="styled-input wide">
-                    <input type="text" placeholder="Your name*"required />
+                    <input type="text" id="Inputname" placeholder="Your name*"required />
                     
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <div class="styled-input">
-                    <input type="text" placeholder="Your email*"required />
+                    <input type="email" id="InputEmail1" placeholder="Your email*"required />
                    
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <div class="styled-input" style="float:right;">
-                    <input type="text" placeholder="Phone*"required />
+                    <input type="text" id="Inputsubject" placeholder="Subject*"required />
                     
                   </div>
                 </div>
                 <div class="col-xs-12">
                   <div class="styled-input wide">
-                    <textarea placeholder="Just give a shout....*" required></textarea>
+                    <textarea id="InputMsgarea" placeholder="Just give a shout....*" required></textarea>
                     
                   </div>
                 </div>
                 <div class="col-xs-12">
-                  <div class="btn-lrg submit-btn">Send Message</div>
+                  <button id="post-btn" type="button" class="btn btn-primary">Submit</button>
                 </div>
             </div>
           </div>
