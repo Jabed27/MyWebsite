@@ -2,7 +2,7 @@ const firebase = require('./FirebaseConnect');
 const database = firebase.firestore();
 const usersCollection =database.collection('users');
 const bcrypt = require('bcrypt');
-const { firestore } = require('../../../Disclose/api/model/FirebaseConnect');
+const { firestore } = require('./FirebaseConnect');
 
 class usermodel{
     //storing to the data base
