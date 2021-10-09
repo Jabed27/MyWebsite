@@ -92,6 +92,34 @@ const sendData=()=>{
     
   };
 
+
+  async function signin(){
+    console.log('inside signin')
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+  console.log(email.value,password.value)
+  const promise = auth.signInWithEmailAndPassword(email.value,password.value).then(()=>{
+     //checking user is active or not
+      auth.onAuthStateChanged(function(user){
+          if(user){
+              var email = user.email;
+              alert("Active user "+email);
+              //is signed in
+              window.location.replace("/");alert("You are signed in!");
+              
+          }else{
+              alert("No user");
+              window.location.replace("/signup");
+              //no user
+          }
+      })
+  });
+  
+  promise.catch(e=>alert(e.message));
+  //state change
+  
+ 
+}
   document.getElementById("register").addEventListener('click', e => {
       console.log('getdocid');
     e.preventDefault();

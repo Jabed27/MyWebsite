@@ -80,7 +80,7 @@
     </script>
      <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="index.html" class="brand-logo"><img style="background-image: none; border-radius: 50%;background-color: black;" src="images/index/Logo.jpeg" alt=""></a>
+          <a id="logo-container" href="index.html" class="brand-logo"><img style="background-image: none; border-radius: 50%;background-color: black;" src="images/index/logo.jpg" alt=""></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#">Works</a></li>
             <li><a href="/static/about.html">About</a></li>
@@ -97,61 +97,69 @@
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
       </nav>
-    <div class="form">
+      <div class="row">
+        <div class="col s12 m6">
+          <img class="loginregisterImaged" src="/static/images/login/login.png" alt="">
+        </div>
+        <div class="col s12 m6">
+          <div class="form">
       
-        <ul class="tab-group">
-          <li class="tab active" ><a href="#">Sign Up</a></li>
-          <li class="tab"><a href="login.html">Log In</a></li>
-        </ul>
-        
-        <div class="tab-content">
-          <div id="signup">   
-            <h1>Sign Up for Free</h1>
+            <ul class="tab-group">
+              <li class="tab active" ><a href="#">Sign Up</a></li>
+              <li class="tab"><a href="login.html">Log In</a></li>
+            </ul>
             
-            <form action="/" method="post">
-            
-            <div class="top-row">
-              <div class="field-wrap">
-               
-                <input type="text" placeholder="First name*" id = "f_name"required autocomplete="off" />
-              </div>
-          
-              <div class="field-wrap">
-               
-                <input type="text" placeholder="Last name*" id = "l_name"required autocomplete="off"/>
-              </div>
-            </div>
-  
-            <div class="field-wrap">
+            <div class="tab-content">
+              <div id="signup">   
+                <h1>Sign Up for Free</h1>
+                
+                <form action="/" method="post">
+                
+                <div class="top-row">
+                  <div class="field-wrap">
+                   
+                    <input type="text" placeholder="First name*" id = "f_name"required autocomplete="off" />
+                  </div>
               
-              <input type="email" placeholder="email*" id = "emailAddress"required autocomplete="off"/>
-            </div>
-            
-            <div class="field-wrap">
+                  <div class="field-wrap">
+                   
+                    <input type="text" placeholder="Last name*" id = "l_name"required autocomplete="off"/>
+                  </div>
+                </div>
+      
+                <div class="field-wrap">
+                  
+                  <input type="email" placeholder="email*" id = "emailAddress"required autocomplete="off"/>
+                </div>
+                
+                <div class="field-wrap">
+                  
+                  <input type="password"placeholder="password*" id = "password"required autocomplete="off"/>
+                </div>
+                
+                <button id="register" type="submit" class="button button-block">Get Rgistered</button>
+                
+                </form>
+      
+              </div>
               
-              <input type="password"placeholder="password*" id = "password"required autocomplete="off"/>
-            </div>
+              
+              <script>
+                function openCity(cityName) {
+                  var i;
+                  var x = document.getElementsByClassName("city");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  document.getElementById(cityName).style.display = "block";  
+                }
+                </script>
+              
+            </div><!-- tab-content -->
             
-            <button id="register" type="submit" class="button button-block">Get Rgistered</button>
-            
-            </form>
-  
-          </div>
-          
-          
-          <script>
-            function openCity(cityName) {
-              var i;
-              var x = document.getElementsByClassName("city");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              document.getElementById(cityName).style.display = "block";  
-            }
-            </script>
-          
-        </div><!-- tab-content -->
-        
-  </div> <!-- /form -->
+      </div> <!-- /form -->
+        </div>
+      </div>
+    
  </body>
 </html>
